@@ -1,4 +1,4 @@
-# Practical Python Programming for IoT
+# SENG2220 Connected Devices 1
 
 ## Chapter 1 - Setting Up Your Development Environment
 
@@ -7,4 +7,4 @@
 * `gpio_pkg_check.py` - Verify availability of Python GPIO Libraries 
 
 * `run_on_boot.sh` - Bash helper script to start a Python program on boot 
-# chap1_seng2220
+
