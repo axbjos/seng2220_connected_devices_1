@@ -1,5 +1,8 @@
-#!/bin/bash
-as -g -mfpu=vfpv2 -o $1.o $1.s
-gcc -o $1 $1.o
-rm $1.o
-./$1 ; echo $?
+#makefile
+all: first
+first: first.o
+	gcc -o $@ $+
+first.o : first.s
+	as -g -mfpu=vfpv2 -o $@ $<
+clean:
+	rm -vf first *.o
